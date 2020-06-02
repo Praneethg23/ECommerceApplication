@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buying"
+    android:orientation="vertical"
+    android:background="@color/colorAccent">
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="Loading...please wait..."
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/login_form"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|left"
+            android:background="@color/colorAccent"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+        <ImageView
+            android:id="@+id/ivC"
+            android:layout_width="106dp"
+            android:layout_height="57dp"
+            android:layout_gravity="right"
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/ic_shopping_cart_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:text="Products"
+            android:textColor="#9035A0"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/listProd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </ListView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
