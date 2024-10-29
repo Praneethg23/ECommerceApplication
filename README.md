@@ -1,4 +1,4 @@
-# MohalleKeDukundar
+# ECommerce Application
 #Developers
   *Praneeth Gubba
   *Gowtham Reddy
